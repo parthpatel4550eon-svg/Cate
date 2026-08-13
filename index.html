@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saumya Patel</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: white;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 25px;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
+        url("PASTE_YOUR_PHOTO_HERE")
+        center/cover fixed;
+}
+
+.box {
+    width: 100%;
+    max-width: 700px;
+    padding: 40px 25px;
+    border-radius: 30px;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(8px);
+}
+
+.photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 20px;
+}
+
+.tagline {
+    font-size: 20px;
+    margin-top: 8px;
+    color: #d9e8ff;
+}
+
+.button {
+    display: inline-block;
+    margin: 25px 5px 5px;
+    padding: 12px 25px;
+    background: #1687ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+section {
+    max-width: 950px;
+    margin: auto;
+    padding: 70px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.about {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dbe7f5;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #101e31;
+    border: 1px solid #263852;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #1687ff;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #1687ff;
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #030914;
+    color: #aebbd0;
+}
+
+@media(max-width:600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HOME -->
+<div class="hero">
+
+    <div class="box">
+
+        <!-- PHOTO -->
+        <img
+        class="photo"
+        src="PASTE_YOUR_PHOTO_HERE"
+        alt="Saumya Patel">
+
+        <h1>Saumya Patel</h1>
+
+        <p class="tagline">
+            ✨ Student • Dreamer • Future Achiever ✨
+        </p>
+
+        <p style="margin-top:12px;">
+            Welcome to my personal website!
+        </p>
+
+        <a class="button" href="#about">About Me</a>
+        <a class="button" href="#details">My Details</a>
+
+    </div>
+
+</div>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <h2>👋 About Me</h2>
+
+    <p class="about">
+        Hello! My name is <b>Saumya Patel</b>.
+        Welcome to my personal website.
+
+        I am a student who enjoys learning new things,
+        exploring technology and working toward my dreams.
+
+        This website contains some information about me,
+        my education, interests, skills and future goals.
+    </p>
+
+</section>
+
+
+<!-- DETAILS -->
+<section id="details">
+
+    <h2>🌟 My Details</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h3>Education</h3>
+            <p>Class 11</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📏</div>
+            <h3>Height</h3>
+            <p>Enter your height</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🇮🇳</div>
+            <h3>Country</h3>
+            <p>India</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Skills</h3>
+            <p>Technology<br>Creativity<br>Learning</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎵</div>
+            <h3>Hobbies</h3>
+            <p>Music<br>Photography<br>Entertainment</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚀</div>
+            <h3>My Goal</h3>
+            <p>
+                Dream big,<br>
+                work hard<br>
+                and achieve success.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MOTTO -->
+<section>
+
+    <h2>💫 My Motto</h2>
+
+    <div class="card">
+
+        <h3>
+            “Dream Big. Work Hard. Never Give Up.”
+        </h3>
+
+        <p>
+            Every day is a new opportunity
+            to learn something new and become
+            better than yesterday.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>© 2026 Saumya Patel</p>
+
+    <p>Made with ❤️</p>
+
+</footer>
+
+</body>
+</html>
